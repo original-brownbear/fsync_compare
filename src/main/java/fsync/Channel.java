@@ -11,7 +11,7 @@ public class Channel implements IO {
 
     public Channel(File file) throws IOException {
         this.channel =
-            FileChannel.open(file.toPath(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            FileChannel.open(file.toPath(), StandardOpenOption.CREATE, StandardOpenOption.WRITE);
     }
 
     @Override
